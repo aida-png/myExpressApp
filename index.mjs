@@ -33,6 +33,6 @@ app.get('/nasa', async(req, res) => {
     res.render('nasa', {data});
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
    console.log('server started');
 });
